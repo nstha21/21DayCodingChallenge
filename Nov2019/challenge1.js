@@ -18,7 +18,7 @@
 //returns the number of neighbourhoods each volunteer should visit if the work of going door to door is split evenly amongst them.
 
 //Running test: The doorToDoor function should return the number of neighbourhoods divided by the number of volunteers.
-/*
+/*/
 
 
   const doorToDoor = (volunteers, neighbourhoods) => {
