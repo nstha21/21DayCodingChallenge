@@ -18,6 +18,34 @@
 //returns the number of neighbourhoods each volunteer should visit if the work of going door to door is split evenly amongst them.
 
 //Running test: The doorToDoor function should return the number of neighbourhoods divided by the number of volunteers.
+
+Examples
+
+Input:
+
+
+    const volunteers = [
+      'Sally',
+      'Jake',
+      'Brian',
+      'Hamid'
+    ];
+
+
+    const neighbourhoods = [
+      'Central Valley',
+      'Big Mountain',
+      'Little Bridge',
+      'Bricktown',
+      'Brownsville',
+      "Paul's Boutique",
+      'Clay Park',
+      'Fox Nest'
+    ];
+    
+Output:
+
+2
 */
 
 
