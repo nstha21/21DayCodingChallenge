@@ -62,3 +62,27 @@ const bestOdds = (tickets, raffleEntries) => {
   });
   return `You have the best odds of winning the ${winningColor} raffle.`
 }
+
+
+/* Longer solution
+const countTickets = (tickets) => {
+  var tally = {red: 0, blue: 0, green : 0};
+  if (!tickets || !Array.isArray(tickets) || !tickets.length) return tally;
+  tickets.forEach( item => {
+    tally[item] = (tally[item] || 0) + 1;    
+  });
+  return tally;
+}
+const bestOdds = (tickets, raffleEntries) => {
+  var tally = countTickets(tickets);
+  var bestColor = 'unknown', highestValue = Number.MAX_SAFE_INTEGER;
+  for(var prop in raffleEntries) {
+    if (prop in tally) raffleEntries[prop] += tally[prop];
+    if (raffleEntries[prop] < highestValue) {
+      bestColor = prop;
+      highestValue = raffleEntries[prop];
+    }
+  }
+  return 'You have the best odds of winning the ' + bestColor + ' raffle.';
+};
+*/
